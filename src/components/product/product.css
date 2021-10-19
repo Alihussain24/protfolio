@@ -1,0 +1,44 @@
+.product {
+  width: 30%;
+  height: 40vh;
+  margin: 20px 10px;
+  border: 1px solid#f622af;
+  overflow: hidden;
+ 
+}
+
+.p-brower {
+  height: 20px;
+  background-color: #ec05ecba;
+  display: flex;
+  align-items: center;
+  z-index:2;
+  position: sticky;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: white;
+}
+
+
+.productImg{
+    width: 100%;
+    transition: all 10s ease;
+  }
+  
+  .productImg:hover.productImg {
+    transform: translateY(-100%);
+  }
+
+
+
+
+  @media screen and (max-width: 480px) {
+    .product {
+ width: 100%;
+ height: 50vh;
+  }
+  }
