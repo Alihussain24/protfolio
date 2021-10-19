@@ -1,7 +1,13 @@
-import React from "react";
+
 import "./intro.css";
+import { ThemeContext } from "../../Context";
+import React, { useRef, useState, useContext } from "react";
+
 import sofi from '../../img/fullSiteImg/102741149_1309556559435556_1150172473045210026_n-removebg-preview.png'
 const Intro = () => {
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="L">
       <div className="left">
@@ -30,16 +36,19 @@ const Intro = () => {
           </div>
           </div>
           <svg
+         
           width="75"
           height="75"
           viewBox="0 0 75 75"
           fill="none"
           stroke="black"
           className="i-scroll"
+
           xmlns="http://www.w3.org/2000/svg"
         >
           <g id="scroll">
             <path
+               
               id="Vector"
               d="M40.5 15L34.5 9L28.5 15"
               stroke-width="3"

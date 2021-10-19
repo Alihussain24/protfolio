@@ -64,7 +64,7 @@ const Contact = () => {
 
             <form ref={formRef} onSubmit={handleSubmit}>
               <input
-                style={{ backgroundColor: darkMode && "#333" }}
+                style={{ backgroundColor: darkMode && "#f622af;" }}
                 type="text"
                 placeholder="Name"
                 name="user_name"
